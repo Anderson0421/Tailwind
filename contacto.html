@@ -4,18 +4,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
     <link rel="stylesheet" href="css/tailwind.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
 </head>
 <body>
-    <div class="pannel">
-        <div class="pannel-title">
-            Contacto
-        </div>
-        <div class="py-5 px-4">
-            <p class="leading-loose mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint aperiam libero provident, harum velit, pariatur aspernatur, illum porro sit vel repellendus dolores reiciendis neque id architecto molestias odit voluptatibus? Explicabo.
-            </p>
-            <a href="index.html" class="btn-primary">Index</a>
-        </div>
+    <div id="app">
+        <panel>
+            <template v-slot:title>Inicio</template>
+            <template v-slot:body>Este es el body desde Vue.js</template>
+        </panel>
     </div>
+    <script src="js/app.js"></script>
 </body>
 </html>
