@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-top: 25px;
+}
+
+@layer components{
+    .btn-primary{
+        @apply bg-blue-500 text-white rounded px-5 py-3;
+    }
+}
