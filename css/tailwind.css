@@ -12,4 +12,10 @@ body{
     .btn-primary{
         @apply bg-blue-500 text-white rounded px-5 py-3;
     }
+    .pannel{
+        @apply border border-black;
+    }
+    .pannel-title{
+        @apply bg-blue-600 py-5 px-4 text-2xl text-white;
+    }
 }
