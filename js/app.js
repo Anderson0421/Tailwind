@@ -12,7 +12,7 @@ Vue.createApp({
                 <p class="leading-loose mb-4">
                     <slot name='body'></slot>
                 </p>
-                <a href="index.html" class="btn-primary">Index</a>
+                <a href="contacto.html" class="btn-primary">Index</a>
             </div>
         </div>
     `,
