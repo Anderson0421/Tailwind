@@ -2,20 +2,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vue</title>
+    <title>Digital Ocean - Main</title>
     <link rel="stylesheet" href="css/tailwind.css">
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
 </head>
-<body>
-    <div id="app">
-        <panel>
-            <template v-slot:title>Este es el home desde Vue</template>
-            <template v-slot:body>Este es el body desde Vue y TailwindCSS</template>
-            <a href="contacto.html" class="btn-primary  bg-do-blue-medium">Contacto</a>
-        </panel>
+<body>  
+    <div class="bg-do-blue-dark text-gray-300 py-2 text-sm">
+        <div class="container mx-auto flex justify-between">
+            <div class="flex items-center">
+                <div>
+                    Join our virtual event for Agencies & Ecommerce: Learn expert strategies to skyrocket your holiday sales
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+            </div>
+            <div class="flex gap-4 items-center">
+                <a href="#" class="bg-do-blue-mediumdark px-2 py-1 rounded text-sky-400 font-semibold">Blogs</a>
+                <a href="#">Docs</a>
+                <a href="#">Get Support</a>
+                <a href="#">Contact Sales</a>
+            </div>
+        </div>
     </div>
-
-    <script src="js/app.js"></script>
 </body>
 </html>
