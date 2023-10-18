@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="css/tailwind.css">
 
 </head>
-<body>  
+<body>
+    <!--Full nav estructura-->
     <div class="bg-do-blue-dark text-gray-300 py-2 text-sm">
         <div class="container mx-auto flex justify-between">
             <div class="flex items-center">
@@ -19,28 +20,74 @@
             </div>
             <div class="flex gap-4 items-center">
                 <a href="#" class="bg-do-blue-mediumdark px-2 py-1 rounded text-sky-400 font-semibold">Blogs</a>
-                <a href="#">Docs</a>
-                <a href="#">Get Support</a>
-                <a href="#">Contact Sales</a>
+                <a href="#" class="hover:text-gray-50">Docs</a>
+                <a href="#" class="hover:text-gray-50">Get Support</a>
+                <a href="#" class="hover:text-gray-50">Contact Sales</a>
             </div>
         </div>
     </div>
     <!--Contenedor para el otro nav-->
-    <div class="py-4 text-xl">
+    <div class="py-4 text-base shadow-md">
         <div class="container mx-auto flex justify-between">
             <div class="flex items-center gap-5"> <!--Convertimos todo a esto a flex con un gap de 5 y centrando los items-->
-                <a><img src="https://ui-cdn.digitalocean.com/registration-next/5eed6d6aab221deb5e8bfa13f0255cfe30e80bcd/static/media/logo-full.05ea951a9a5341c342027070e15fb071.svg" class="sc-iyuJgS eZXRQW"></a>
-                <a href="#"><img src="" alt="">Products</a>
-                <a href="#"><img src="" alt="">Solutions</a>
-                <a href="#"><img src="" alt="">MarketPlace</a>
-                <a href="#"><img src="" alt="">Community</a>
-                <a href="#"><img src="" alt="">Pricing</a>
+                <a class="mb-1"><img src="https://ui-cdn.digitalocean.com/registration-next/5eed6d6aab221deb5e8bfa13f0255cfe30e80bcd/static/media/logo-full.05ea951a9a5341c342027070e15fb071.svg" class="sc-iyuJgS eZXRQW"></a>
+                <div class="flex items-center">
+                    <a class="mr-2" href="#">Products</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-400">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </div>
+                <div class="flex items-center">
+                    <a class="mr-2" href="#">Solutions</a><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-400">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </div>
+                <a href="#">MarketPlace</a>
+                <div class="flex items-center">
+                    <a class="mr-2" href="#">Community</a><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-400">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </div>
+                <a href="#">Pricing</a>
             </div>
             <div class="flex gap-4">
-                <button class="py-2 px-5 border border-black rounded">Log in</button>
-                <button class="bg-do-blue-light rounded py-2 px-5 text-white">Sign Up</button>
+                <a href="#" class="py-2 px-5 border border-gray-400 rounded-lg focus:outline-dotted focus:outline-1 focus:bg-sky-100">Log in</a>
+                <a href="#" class="bg-do-blue-light border-none rounded-lg py-2 px-5 text-white font-bold hover:bg-do-blue-medium active:bg-do-blue-mediumdark active:text-do-blue-light">Sign Up</a>
             </div>
         </div>
     </div>
+    <!--Fin nav estructura-->
+
+    <!-- Inicio - Body -->
+
+    <div>
+        <div class="container flex mx-auto">
+            <div class="w-1/2"> <!--Conteedor Titulo-->
+                <h1 class="text-6xl font-bold mb-3 text-do-blue-dark tracking-tighter">The cloud is complex. We make it simple.</h1>
+                <p class="text-xl font-medium text-gray-700">The cloud computing services and you need, with the predictable princing
+                    , developer-friendly features, and scalability you'll love.
+                </p>
+            </div>
+            <div class="w-1/2"> <!--Contenedor Form-->
+                <h1 class="font-medium">Welcome to DigitalOcean. Sign up to get started!</h1>
+                <form action="">
+                    <div class="flex flex-col gap-y-3 mt-3 w-4/5">
+                        <input type="text" class="border border-gray-400 rounded-lg py-3 px-3" placeholder="First name">
+                        <input type="text" class="border border-gray-400 rounded-lg py-3 px-3" placeholder="Email">
+                        <input type="password" class="border border-gray-400 rounded-lg py-3 px-3" placeholder="Password">
+                        <div class="flex items-center gap-x-4 justify-between">
+                            <a href="#" class="bg-do-blue-light border-none rounded-lg w-3/4 text-center py-2 px-5 text-white font-bold hover:bg-do-blue-medium active:bg-do-blue-mediumdark active:text-do-blue-light">Sign Up</a>
+                            <button class="px-3 py-3 bg-gray-200 rounded-lg"><img src="https://ui-cdn.digitalocean.com/registration-next/5eed6d6aab221deb5e8bfa13f0255cfe30e80bcd/static/media/oauth-logo-google.420169f299402ff6bd627eeff16bad0d.svg" class="sc-bEvXvO hSvNUq"></button>
+                            <button class="px-3 py-3 bg-gray-200 rounded-lg"><img src="https://ui-cdn.digitalocean.com/registration-next/5eed6d6aab221deb5e8bfa13f0255cfe30e80bcd/static/media/oauth-logo-github.8ce7a7e3abf7ccf79ccc5b0bdcc9f46e.svg" class="sc-bEvXvO hSvNUq"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-gray-500">By signing up you agree to the <a href="#" class="underline font-light">Terms of Services</a> </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
