@@ -26,6 +26,16 @@ module.exports = {
       },
       width:{
         '88':'22rem',
+      },
+      keyframes: {
+        float: {
+          '0%': { transform: 'translateY(-10px)' },
+          '50%': { transform: 'translateY(10px)' },
+          '100%': { transform: 'translateY(-10px)' },
+        },
+      },
+      animation:{
+        float: 'float 4s ease-in infinite',
       }
     },
   },
