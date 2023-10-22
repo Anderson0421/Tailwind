@@ -2,18 +2,13 @@ Vue.createApp({
     data() {
         return {};
     },
-}).component('panel', {
+}).component('link-cascadia', {
     template: `
-        <div class="pannel ">
-            <div class="pannel-title bg-do-blue-dark">
-                <slot name='title'></slot>
-            </div>
-            <div class="py-5 px-4">
-                <p class="leading-loose mb-4">
-                    <slot name='body'></slot>
-                </p>
-                <slot></slot>
-            </div>
-        </div>
+    <a href="#" class="group flex items-center text-lg font-cascadia text-do-blue-light font-bold hover:text-do-blue-medium hover:duration-200">
+        <slot></slot>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 group-hover:ml-1 group-hover:duration-150 ">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
+    </a>
     `,
 }).mount('#app');
