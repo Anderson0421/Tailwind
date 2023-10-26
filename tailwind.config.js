@@ -3,7 +3,6 @@ module.exports = {
   content: [
     './*.html',
     '/js/*.js',
-    './*.php',
   ],
   theme: {
     container : {
