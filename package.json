@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "production": "vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "postcss-dev": "NODE_ENV=dev postcss ./css/tailwind.css -o ./css/postcss.css",
     "postcss-prod": "NODE_ENV=production postcss ./css/tailwind.css -o ./css/postcss.css"
