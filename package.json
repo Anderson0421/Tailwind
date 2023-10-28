@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "vite --host",
+    "production": "vite build",
     "preview": "vite preview",
     "postcss-dev": "NODE_ENV=dev postcss ./css/tailwind.css -o ./css/postcss.css",
     "postcss-prod": "NODE_ENV=production postcss ./css/tailwind.css -o ./css/postcss.css"
