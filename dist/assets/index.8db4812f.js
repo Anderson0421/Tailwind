@@ -1,4 +1,4 @@
-const i=function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))n(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const r of t.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&n(r)}).observe(document,{childList:!0,subtree:!0});function l(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerpolicy&&(t.referrerPolicy=e.referrerpolicy),e.crossorigin==="use-credentials"?t.credentials="include":e.crossorigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function n(e){if(e.ep)return;e.ep=!0;const t=l(e);fetch(e.href,t)}};i();const s=Vue.createApp({});s.component("link-cascadia",{template:`
+import"https://cdn.jsdelivr.net/npm/vue@3.2.0/dist/vue.esm-browser.js";const l=function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))n(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const s of t.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&n(s)}).observe(document,{childList:!0,subtree:!0});function i(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerpolicy&&(t.referrerPolicy=e.referrerpolicy),e.crossorigin==="use-credentials"?t.credentials="include":e.crossorigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function n(e){if(e.ep)return;e.ep=!0;const t=i(e);fetch(e.href,t)}};l();const r=Vue.createApp({});r.component("link-cascadia",{template:`
     <a href="#" class="group flex items-center text-lg font-cascadia text-do-blue-light font-bold hover:text-do-blue-medium hover:duration-200">
         <slot></slot>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 group-hover:ml-1 group-hover:duration-150">
@@ -6,7 +6,7 @@ const i=function(){const o=document.createElement("link").relList;if(o&&o.suppor
         </svg>
     </a>
     
-    `});s.component("panel-blog",{template:`
+    `});r.component("panel-blog",{template:`
     <div class="w-1/4 bg-white shadow-lg rounded-lg">
         <div>
             <slot name='image'></slot>
@@ -27,4 +27,4 @@ const i=function(){const o=document.createElement("link").relList;if(o&&o.suppor
             </div>
         </div>
     </div>
-    `});s.mount("#app");
+    `});r.mount("#app");
