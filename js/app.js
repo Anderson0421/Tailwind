@@ -38,3 +38,14 @@ app.component('panel-blog', {
 });
 
 app.mount('#app');
+
+
+const btnsol = document.getElementById('solutionsbtn');
+const menuD = document.getElementById('menuD');
+
+
+btnsol.addEventListener('click',function(){
+    menuD.classList.toggle('hidden');
+})
+
+
