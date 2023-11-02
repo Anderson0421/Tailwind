@@ -1,5 +1,3 @@
-import { createApp } from 'https://cdn.jsdelivr.net/npm/vue@3.2.0/dist/vue.esm-browser.js';
-
 const app = Vue.createApp({});
 
 app.component('link-cascadia', {
