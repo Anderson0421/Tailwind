@@ -10,7 +10,7 @@
     <div id="app" class="relative">
         <div class="fixed z-10 w-full">
             <!-- Navbar -->
-            <div class="bg-do-blue-dark text-gray-300 py-2 text-sm">
+            <div class="hidden lg:block bg-do-blue-dark text-gray-300 py-2 text-sm">
                 <div class="container mx-auto flex justify-between">
                     <div class="flex items-center">
                         <div>
@@ -28,9 +28,25 @@
                     </div>
                 </div>
             </div>
+
+
+            <!-- Mobile -->
+            <div class="container mx-auto md:hidden flex justify-between items-center py-5 shadow-lg bg-white">
+                <div>
+                    <a class="mb-1"><img src="https://ui-cdn.digitalocean.com/registration-next/5eed6d6aab221deb5e8bfa13f0255cfe30e80bcd/static/media/logo-full.05ea951a9a5341c342027070e15fb071.svg" class="sc-iyuJgS eZXRQW"></a>
+                </div>
+                <div>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
     
-            <!-- Navbar 2 -->
-            <div class="py-4 text-base shadow-md relative  bg-white">
+            <!-- Desktop -->
+            <div class="hidden md:block py-4 text-base shadow-md relative  bg-white">
                 <div class="container mx-auto flex justify-between">
                     <div class="flex items-center gap-5"> <!--Convertimos todo a esto a flex con un gap de 5 y centrando los items-->
                         <a class="mb-1"><img src="https://ui-cdn.digitalocean.com/registration-next/5eed6d6aab221deb5e8bfa13f0255cfe30e80bcd/static/media/logo-full.05ea951a9a5341c342027070e15fb071.svg" class="sc-iyuJgS eZXRQW"></a>
@@ -59,6 +75,9 @@
                     </div>
                 </div>
             </div>
+
+
+
             <div id="menuD" class="hidden bg-white h-screen z-20 relative  pt-10 shadow">
                 <div class="font-bold uppercase pb-10 px-28">Our products</div>
                 <div class="flex px-28">
@@ -121,8 +140,8 @@
         <!-- Inicio - Body -->
 
         <div class="pt-64 pb-48 relative z-0" style="background: #f9fafe no-repeat center url(img/hero-bg-animation-ef666767f909d3b76122f0279a8bf16d.svg); background-size: cover;">
-            <div class="container flex mx-auto items-center">
-                <div class="w-1/2"> <!--Conteedor Titulo-->
+            <div class="container flex flex-col lg:flex-row mx-auto items-center ">
+                <div class="w-full lg:w-1/2"> <!--Contenedor Titulo-->
                     <h1 class="text-6xl font-bold mb-3 text-do-blue-dark tracking-tighter">The cloud is complex. We make it simple.</h1>
                     <p class="text-xl font-medium text-gray-700">The cloud computing services and you need, with the predictable princing
                         , developer-friendly features, and scalability you'll love.
